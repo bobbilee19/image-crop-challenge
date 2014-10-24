@@ -1,0 +1,26 @@
+<h1>Croppy</h1>
+<p>Let's do this...</p>
+
+<div class="uploader">
+  <%= form_tag images_path, multipart: true do %>
+    <div class="row">
+      <label for="name">Name</label>
+      <%= text_field_tag :name %>
+    </div>
+    <div class="row">
+      <label for="name">Height</label>
+      <%= text_field_tag :height %>
+    </div>
+    <div class="row">
+      <label for="name">Width</label>
+      <%= text_field_tag :width %>
+    </div>
+    <div class="row">
+      <label for="source">Source Image</label>
+      <%= file_field_tag :source %>
+    </div>
+    <div class="row">
+      <input id="submit-button" type="submit" name="Commit" />
+    </div>
+  <% end %>
+</div>
